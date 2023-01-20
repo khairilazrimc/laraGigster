@@ -1,12 +1,24 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
-A project that is built based on the Laravel Framework
+LaraGigster is project that is built based on the Laravel Framework
 </p>
 
-## About Laravel
+<br>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## About LaraGigster
+
+LaraGigster is a youtube crash course project built based on [this video](https://www.youtube.com/watch?v=MYyJ4PuL4pY) posted by Traversy Media. 
+
+It was built as a system that intends to be the home of Laravel-based projects or jobs where the User(Gigster) have to sign-up to post the vacancies they have in their jobs/projects(Gigs).
+
+
+## Use-Case
+
+###Guest
+
+
+with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
