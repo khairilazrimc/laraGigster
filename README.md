@@ -4,7 +4,7 @@
 LaraGigster is project that is built based on the Laravel Framework
 </p>
 
-
+<br>
 
 ## About LaraGigster
 
