@@ -48,9 +48,9 @@ This project only have 2 **models** which are Users.php (have many listings) and
 - object relationship
 
 This project uses the blade **view**, utilizing its basic features such as:
-- components directory  - <code><x-comp>...</x-comp> - {{ $slot }}</code>
-- components variables  - <code><x-comp :varsCsv="$vars->var" /> - @props(['varsCsv'])</code>
-- components attribute  - <code><div {{ $attributes->merge(['class' => 'class-name']) }}>...</div></code>
+- components directory  - <code>`<x-comp>`...`</x-comp>` - {{ $slot }}</code>
+- components variables  - <code>`<x-comp :varsCsv="$vars->var" />` - @props(['varsCsv'])</code>
+- components attribute  - <code>`<div {{ $attributes->merge(['class' => 'class-name']) }}>`...`</div>`</code>
 - partials directory    - <code>@include('partials._filename')</code>
 - inline PHP function   - <code>@unless()@else@endunless, @if()@endif, @foreach()@endforeach</code>
 - inline PHP echo       - <code>{{ $message }}</code>
