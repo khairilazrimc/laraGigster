@@ -1,11 +1,3 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-LaraGigster is project that is built based on the Laravel Framework
-</p>
-
-<br>
-
 ## About LaraGigster
 
 LaraGigster is a youtube crash course project built based on [this video](https://www.youtube.com/watch?v=MYyJ4PuL4pY) posted by Traversy Media. 
@@ -56,7 +48,7 @@ This project only have 2 **models** which are Users.php (have many listings) and
 - object relationship
 
 This project uses the blade **view**, utilizing its basic features such as:
-- components directory  - <x-component>...</x-component> - {{ $slot }}
+- components directory  - <code><x-component>...</x-component> - {{ $slot }}</code>
 - components variables  - <x-component :varsCsv="$vars->var" /> - @props(['varsCsv'])
 - components attribute  - <div {{ $attributes->merge(['class' => 'class-name']) }}>
 - partials directory    - @include('partials._filename')
@@ -73,3 +65,11 @@ Last but not least, the project was build using these **version** of frameworks:
 - Laravel 9.47.0
 
 With that, I humbly thank you.
+
+<br>
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+
+<p align="center">
+LaraGigster is project that is built based on the Laravel Framework
+</p>
