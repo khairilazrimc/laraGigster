@@ -10,66 +10,66 @@ LaraGigster is project that is built based on the Laravel Framework
 
 LaraGigster is a youtube crash course project built based on [this video](https://www.youtube.com/watch?v=MYyJ4PuL4pY) posted by Traversy Media. 
 
-It was built as a system that intends to be the home of Laravel-based projects or jobs where the User(Gigster) have to sign-up to post the vacancies they have in their jobs/projects(Gigs).
+It was built as a system that intends to be the home of Laravel-based projects or jobs where the User (Gigster) have to sign-up to post the vacancies they have in their jobs/projects (Gigs).
 
+<br>
 
-## Use-Case
+## LaraGigster Use-Case
 
-###Guest
+Guest
+- View all Gigs
+- Search for Gigs
+- Register as a Gigster
+- Login to Gigster account
 
+Gigster
+- View all Gigs
+- Search for Gigs
+- Post/Create Gig
+- Edit/Update posted Gig
+- Delete posted Gig
+- Logout from Gigster account
 
-with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<br>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Within LaraGigster
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+This project utilizes the initial Laravel v9 **framework** with several inclusions of other frameworks which links can be found inside //resources/views/components/layout.blade.php:
+- fontawesome
+- tailwindcss
+- alpinejs
 
-## Learning Laravel
+This project only make use of 2 **controllers** which can be found inside //app/Http/Controllers/. Inside these controllers, several basic functions have been declared:
+- show all/filtered listings
+- listings pagination
+- form validations
+- attachment uploads
+- object creation/edit/delete
+- user authentication
+- page redirection
+- flash message
+- listing management acording to user
+- user registration/login/logout
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+This project only have 2 **models** which are Users.php (have many listings) and Listing.php (belong to user) which can be found inside //app/Models/. Inside these models several basic functions have been declared:
+- listings scopeFilter
+- object relationship
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+This project uses the blade **view**, utilizing its basic features such as:
+- components directory  - <x-component>...</x-component> - {{ $slot }}
+- components variables  - <x-component :varsCsv="$vars->var" /> - @props(['varsCsv'])
+- components attribute  - <div {{ $attributes->merge(['class' => 'class-name']) }}>
+- partials directory    - @include('partials._filename')
+- inline PHP function   - @unless()@else@endunless, @if()@endif, @foreach()@endforeach, 
+- inline PHP echo       - {{ $message }}
+- form features         - @csrf, @method('PUT/DELETE'), @error('inputname')@enderror, 
+- listings pagination   - {{ $vars->links() }}
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+This project utilizes MySQL **database**. The SQL file pertaining to the database is included inside this repo named laragigster.sql which has several test data. Similarly, this repo also encompasses the required factories, migrations, and seeders which can be executed as to showcase the same results of that of the included SQL file.
 
-## Laravel Sponsors
+Last but not least, the project was build using these **version** of frameworks:
+- PHP 8.2.0
+- MySQL 8.2.0
+- Laravel 9.47.0
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+With that, I humbly thank you.
