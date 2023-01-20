@@ -48,14 +48,14 @@ This project only have 2 **models** which are Users.php (have many listings) and
 - object relationship
 
 This project uses the blade **view**, utilizing its basic features such as:
-- components directory  - <code><x-component>...</x-component> - {{ $slot }}</code>
-- components variables  - <x-component :varsCsv="$vars->var" /> - @props(['varsCsv'])
-- components attribute  - <div {{ $attributes->merge(['class' => 'class-name']) }}>
-- partials directory    - @include('partials._filename')
-- inline PHP function   - @unless()@else@endunless, @if()@endif, @foreach()@endforeach, 
-- inline PHP echo       - {{ $message }}
-- form features         - @csrf, @method('PUT/DELETE'), @error('inputname')@enderror, 
-- listings pagination   - {{ $vars->links() }}
+- components directory  - <code>`<x-component>`...`</x-component>` - {{ $slot }}</code>
+- components variables  - <code><x-component :varsCsv="$vars->var" /> - @props(['varsCsv'])</code>
+- components attribute  - <code><div {{ $attributes->merge(['class' => 'class-name']) }}></code>
+- partials directory    - <code>@include('partials._filename')</code>
+- inline PHP function   - <code>@unless()@else@endunless, @if()@endif, @foreach()@endforeach</code>
+- inline PHP echo       - <code>{{ $message }}</code>
+- form features         - <code>@csrf, @method('PUT/DELETE'), @error('inputname')@enderror</code>
+- listings pagination   - <code>{{ $vars->links() }}</code>
 
 This project utilizes MySQL **database**. The SQL file pertaining to the database is included inside this repo named laragigster.sql which has several test data. Similarly, this repo also encompasses the required factories, migrations, and seeders which can be executed as to showcase the same results of that of the included SQL file.
 
