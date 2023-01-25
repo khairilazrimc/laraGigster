@@ -5,7 +5,7 @@
 
 ## About LaraGigster
 
-LaraGigster is a youtube crash course project built based on [this video](https://www.youtube.com/watch?v=MYyJ4PuL4pY) posted by Traversy Media. 
+LaraGigster is a project built based on [this video](https://www.youtube.com/watch?v=MYyJ4PuL4pY) posted by Traversy Media. 
 
 It is built as a system that intends to be the home of Laravel-based projects or jobs where the User (Gigster) have to sign-up to post the vacancies they have in their jobs/projects (Gigs).
 
